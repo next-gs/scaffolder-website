@@ -4,6 +4,14 @@ require 'grid-coordinates'
 Compass.add_project_configuration 'compass.config'
 
 
+compile '/code/*/' do
+  nil # Don't complile code directory
+end
+
+route '/code/*/' do
+  nil # Don't create routes for code data
+end
+
 compile '/stylesheets/*/' do
   filter :sass, Compass.sass_engine_options
 end

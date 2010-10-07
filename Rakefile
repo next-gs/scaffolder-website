@@ -1,7 +1,7 @@
 require 'nanoc3/tasks'
 
 desc "Cleans, builds, and uploads website files"
-task :up => [:clean, :build, "deploy:rsync"]
+task :up => [:clean, :build, :rdoc, "deploy:rsync"]
 
 task :clean do
   out = File.join(File.dirname(__FILE__),'output')
@@ -11,4 +11,11 @@ end
 
 task :build do
   `nanoc compile`
+end
+
+task :rdoc do
+  FileUtils.chdir("content/code") do
+    `rake yard`
+  end
+  FileUtils.mv("content/code/doc","output/rdoc")
 end
