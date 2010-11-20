@@ -13,7 +13,7 @@ route '/code/*/' do
 end
 
 compile '/stylesheets/*/' do
-  filter :sass, Compass.sass_engine_options
+  filter :sass, Compass.sass_engine_options.merge(:syntax => :scss)
   filter :rainpress
 end
 
