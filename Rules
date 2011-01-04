@@ -3,6 +3,12 @@ require 'compass'
 require 'grid-coordinates'
 Compass.add_project_configuration 'compass.config'
 
+route '/static/*' do
+  # /static/foo.ext → /foo.ext
+  item.identifier[7..-2] + '.' + item[:extension]
+end
+
+compile '/static/*' do; end
 
 compile '/code/*/' do
   nil # Don't complile code directory
@@ -21,14 +27,20 @@ route '/stylesheets/*/' do
   item.identifier.chop + '.css'
 end
 
-compile '*' do
-  filter :erb
-  filter :rdiscount
-  layout 'default'
+route '/markup/*' do
+  # /markup/foo.markdown → /foo/index.html
+  item.identifier[7..-1] + 'index.html'
 end
 
-route '*' do
-  item.identifier + 'index.html'
+compile '/markup/*' do
+  filter :r_code_fix
+  filter :erb
+  filter :rdiscount
+  filter :colorize_syntax, :colorizers => {
+    :css => :pygmentize,
+    :r => :pygmentize,
+  }
+  layout 'default'
 end
 
 layout '*', :haml, :format => :html5
