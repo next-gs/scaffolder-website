@@ -14,8 +14,8 @@ task :build do
 end
 
 task :rdoc do
-  FileUtils.chdir("content/code") do
+  FileUtils.chdir("content/code/scaffolder") do
     `rake yard`
   end
-  FileUtils.mv("content/code/doc","output/rdoc")
+  FileUtils.mv("content/code/scaffolder/doc","output/rdoc")
 end
