@@ -12,8 +12,10 @@ deploy:
     dst: "webserver:/home/admin/sites/michaelbarton.me.uk/scaffolder"
     options: [ '-gpPrvz' ]
 site:
-  title: "Scaffolder: Genome scaffolding for human beings"
+  title: "Scaffolder"
+  subtitle: "Genome scaffolding for human beings"
   url: "http://www.michaelbarton.me.uk/scaffolder"
   analytics_token: "UA-1362555-2"
 author:
-  url: "http://www.michaelbarton.me.uk
+  url: "http://www.michaelbarton.me.uk"
+  name: "Michael Barton"
