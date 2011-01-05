@@ -3,6 +3,10 @@ require 'compass'
 require 'grid-coordinates'
 Compass.add_project_configuration 'compass.config'
 
+preprocess do
+  generate_man_page_fragments
+end
+
 route '/static/*' do
   # /static/foo.ext → /foo.ext
   item.identifier[7..-2] + '.' + item[:extension]
