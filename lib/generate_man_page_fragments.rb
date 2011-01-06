@@ -1,4 +1,5 @@
 def generate_man_page_fragments
+  Dir.mkdir(dest) unless File.exists?(dest)
   clear_dest
 
   Dir[source].each do |file|
