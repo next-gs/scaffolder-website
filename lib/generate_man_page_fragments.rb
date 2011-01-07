@@ -1,5 +1,4 @@
 def generate_man_page_fragments
-  Dir.mkdir(dest) unless File.exists?(dest)
   clear_dest
 
   Dir[source].each do |file|
@@ -27,7 +26,7 @@ def dest
 end
 
 def clear_dest
-  Dir[File.join(dest,'*')].each{|file| File.delete file}
+  Dir[File.join(dest,'*.html')].each{|file| File.delete file}
 end
 
 def title_from(file)
