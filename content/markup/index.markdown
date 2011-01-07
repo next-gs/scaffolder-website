@@ -1,5 +1,5 @@
 --- 
-  title: Homepage
+  title: Opinionated genome scaffolding
 ---
 
 # Turns murky sequence changes ...

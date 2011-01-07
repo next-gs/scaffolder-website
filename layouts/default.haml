@@ -6,11 +6,12 @@
   %body{:onload => "prettyPrint()" }
     .container
       = render "_title"
+      = render "_navigation"
       %div{:role => "main"}
         %article
           %section
             %header
-              %a{:href => @site.config[:site][:url] + @item.path }
+              %a{:href => relative_path_to(@item.path) }
                 %h2
                   = "#{@item[:title]}"
             = yield

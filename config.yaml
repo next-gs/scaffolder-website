@@ -16,6 +16,9 @@ site:
   subtitle: "Genome scaffolding for human beings"
   url: "http://www.michaelbarton.me.uk/projects/scaffolder"
   analytics_token: "UA-1362555-2"
+  navigation:
+    documentation: "/rdoc"
+    'man pages': "/man"
 author:
   url: "http://www.michaelbarton.me.uk"
   name: "Michael Barton"
