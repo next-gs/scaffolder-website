@@ -3,5 +3,5 @@
     %ul
       - @site.config[:site][:navigation].each do |name,href|
         %li
-          %a{:href => href}
+          %a{:href => relative_path_to(href)}
             = name

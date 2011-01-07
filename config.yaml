@@ -17,8 +17,8 @@ site:
   url: "http://www.michaelbarton.me.uk/projects/scaffolder"
   analytics_token: "UA-1362555-2"
   navigation:
-    documentation: "http://www.michaelbarton.me.uk/projects/scaffolder/rdoc"
-    'man pages': "http://www.michaelbarton.me.uk/projects/scaffolder/man"
+    documentation: "/rdoc"
+    'man pages': "/man"
 author:
   url: "http://www.michaelbarton.me.uk"
   name: "Michael Barton"
