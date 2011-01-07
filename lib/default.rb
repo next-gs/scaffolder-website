@@ -1,7 +1,7 @@
 include Nanoc3::Helpers::Rendering
 include Nanoc3::Helpers::LinkTo
 
-def highlight(lang)
+def highlight
   "<pre class=\"class=prettyprint\">"
 end
 
