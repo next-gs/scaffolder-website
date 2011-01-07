@@ -20,11 +20,18 @@ end
 
 route '/code/*/' do
   nil # Don't create routes for code data
+
+compile '/javascript/*/' do
+  filter :minify
+end
+
+route '/javascript/*/' do
+  item.identifier.chop + '.js'
 end
 
 compile '/stylesheets/*/' do
   filter :sass, Compass.sass_engine_options.merge(:syntax => :scss)
-  filter :rainpress
+  filter :minify
 end
 
 route '/stylesheets/*/' do
@@ -40,10 +47,6 @@ compile '/markup/*' do
   filter :r_code_fix
   filter :erb
   filter :rdiscount
-  filter :colorize_syntax, :colorizers => {
-    :css => :pygmentize,
-    :r => :pygmentize,
-  }
   layout 'default'
 end
 
