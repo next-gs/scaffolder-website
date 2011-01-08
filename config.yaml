@@ -18,7 +18,7 @@ site:
   analytics_token: "UA-1362555-2"
   navigation:
     documentation: "/rdoc"
-    'man pages': "/man"
+    'unix manual pages': "/man"
 author:
   url: "http://www.michaelbarton.me.uk"
   name: "Michael Barton"

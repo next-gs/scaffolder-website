@@ -1,5 +1,5 @@
 ---
-  title: Man Pages
+  title: Unix Manual Pages
 ---
 
 Scaffolder provides a command line binary which can be installed then used as follows:
