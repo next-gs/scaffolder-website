@@ -17,7 +17,7 @@ site:
   url: "http://www.michaelbarton.me.uk/projects/scaffolder"
   analytics_token: "UA-1362555-2"
   navigation:
-    documentation: "/rdoc"
+    'api documentation': "/rdoc"
     'unix manual pages': "/man"
 author:
   url: "http://www.michaelbarton.me.uk"
