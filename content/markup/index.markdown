@@ -2,10 +2,23 @@
   title: Opinionated genome scaffolding
 ---
 
-# Turns murky sequence changes ...
+Edit your genome sequence using a simple human readable syntax. Manage contig positions and add inserts all in a plain text file.
 
-<%= image('/images/diffs/before.png',600) %>
-
-# ... into meaningful genome source code.
-
-<%= image('/images/diffs/after.png',600) %>
+<%= highlight %>
+---
+  -
+    sequence:
+      source: "contig00001"
+      reverse: true
+  -
+    unresolved:
+      length: 10
+  -
+    sequence:
+      source: "scaffold00006"
+      inserts:
+      -
+        source: "pcr_sequence_6-1"
+        open: 599152
+        close: 599817
+<%= endhighlight %>
