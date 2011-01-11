@@ -19,6 +19,7 @@ site:
   navigation:
     'api documentation': "/rdoc"
     'unix manual pages': "/man"
+    'contribute':        "/contribute"
 author:
   url: "http://www.michaelbarton.me.uk"
   name: "Michael Barton"
