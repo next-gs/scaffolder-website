@@ -18,4 +18,7 @@ task :rdoc do
     `rake yard`
   end
   FileUtils.mv("content/code/scaffolder/doc","output/rdoc")
+  Dir["content/code/*/Gemfile.lock"].each do |lock_file|
+    File.delete lock_file
+  end
 end
