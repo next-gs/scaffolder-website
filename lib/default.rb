@@ -9,6 +9,15 @@ def endhighlight
   "</pre>"
 end
 
+def navigation_link(link)
+  case link
+  when /http/
+    link
+  else
+    relative_path_to link
+  end
+end
+
 def image(url,width=400)
   "<img src='#{relative_path_to(url)}' width=#{width}>"
 end

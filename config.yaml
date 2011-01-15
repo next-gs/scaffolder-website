@@ -17,7 +17,7 @@ site:
   url: "http://www.michaelbarton.me.uk/projects/scaffolder"
   analytics_token: "UA-1362555-2"
   navigation:
-    'api documentation': "/rdoc"
+    'api documentation': "http://rubydoc.info/gems/scaffolder/frames"
     'unix manual pages': "/man"
     'contribute':        "/contribute"
 author:
