@@ -15,7 +15,7 @@ site:
   title: "Scaffolder"
   subtitle: "Genome scaffolding for human beings"
   url: "http://www.michaelbarton.me.uk/projects/scaffolder"
-  analytics_token: "UA-1362555-2"
+  analytics_token: "UA-1362555-4"
   navigation:
     'api documentation': "http://rubydoc.info/gems/scaffolder/frames"
     'unix manual pages': "/man"
