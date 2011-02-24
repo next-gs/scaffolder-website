@@ -30,6 +30,13 @@ $pre:       #333333;  // Code block background colour
   background: $highlight;
 }
 
+@mixin page-header {
+  h2 {
+    @include leader(1);
+    font-weight: bolder;
+  }
+}
+
 // Customisation --------------------------------------------------------
 
 header {
@@ -81,22 +88,35 @@ div[role="navigation"] {
 div[role="main"] {
   @include columns(18);
   @include omega;
+  @include page-header;
+
   article {
+    background: $highlight;
     @include columns(12,18);
     @include prefix(1);
     @include suffix(1);
-    background: $highlight;
   }
+
   aside {
     @include columns(4,18);
     @include omega(18);
   }
-  h2 {
-    @include leader(1);
-    font-weight: bolder;
-  }
 }
 
+div[role="man-page"] {
+  @include columns(18);
+  @include omega;
+  @include page-header;
+
+  article {
+    background: $highlight;
+    header {
+      @include columns(17,18);
+      @include prefix(1);
+      @include omega(18);
+    }
+  }
+}
 
 
 pre {
