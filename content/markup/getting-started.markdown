@@ -85,8 +85,8 @@ This specifies a scaffold containing a single sequence entry. YAML formatted
 documents should begin with triple dashes ('---'). Each entry in the scaffold
 list also starts with a dash ('-'). The 'sequence' tag specifies the first
 entry in the scaffold is a sequence. The 'source' tag identifies the name of
-the sequence which matches the fasta header of the first sequence in the fasta
-file.
+the sequence to use. The source tag should match the first space delitimited
+word in the corresponding sequence fasta header.
 
 The sequence for this scaffold is produced by running the scaffolder sequence
 command with the locations of these two files.
