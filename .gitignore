@@ -2,3 +2,6 @@ tmp
 output
 .sass-cache
 config.yaml
+
+# Man pages not under revision control
+content/markup/man
