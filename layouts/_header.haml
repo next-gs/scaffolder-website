@@ -18,6 +18,9 @@
   = stylesheet relative_path_to("/stylesheets/ie.css")
   = stylesheet relative_path_to("/stylesheets/print.css"), 'print'
 
+  -# Favicon
+  %link{ :href => relative_path_to("/images/favicon.ico"), :rel => "shortcut icon" }
+
   %script{:src => relative_path_to("/javascript/prettify.js"), :type => "text/javascript"}
 
   -# HTML5 modernizer
