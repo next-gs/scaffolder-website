@@ -1,6 +1,26 @@
+// Constans --------------------------------------------------------------
+
+$ratio: 1.61803399;
+
 // Font Sizes --------------------------------------------------------------
 $base-font-size: 16px;
 $base-line-height: 24px;
+
+$header-font-size: $base-font-size * $ratio;
+$pre-font-size: $base-font-size;
+$navigation-font-size: 10px;
+
+// Rounded corners ---------------------------------------------------
+$text-corner-radius: 6px;
+$pre-corner-radius: 12px;
+
+// Colors --------------------------------------------------------------
+$base:      white;    // Page background colour
+$highlight: white;    // Text area background colour
+$text:      #262626;  // Text colour
+$alt:       #005498;  // Link colour
+$emph:      #005498;  // Title colors
+$pre:       #333333;  // Code block background colour
 
 // Grid --------------------------------------------------------------
 $total-cols: 24;
