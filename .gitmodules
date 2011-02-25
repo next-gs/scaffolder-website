@@ -1,6 +1,3 @@
-[submodule "content/stylesheets"]
-	path = content/stylesheets
-	url = git@github.com:michaelbarton/common-compass-stylesheet.git
 [submodule "content/code/scaffolder-tools"]
 	path = content/code/scaffolder-tools
 	url = git://github.com/michaelbarton/scaffolder-tools.git

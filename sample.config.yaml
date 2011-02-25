@@ -20,7 +20,6 @@ site:
     'api documentation': "http://rubydoc.info/gems/scaffolder/frames"
     'unix manual pages': "/man"
     'contribute':        "/contribute"
-    'getting started':   "/getting-started"
 author:
   url: "http://www.michaelbarton.me.uk"
   name: "Michael Barton"

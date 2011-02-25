@@ -7,7 +7,7 @@
     .container
       = render "_title"
       = render "_navigation"
-      %div{:role => "main"}
+      %div{:role => @item[:type] || "main"}
         %article
           %section
             %header
