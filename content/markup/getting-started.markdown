@@ -180,9 +180,9 @@ that this is now the case where four guanine bases have been inserted
 
 This is a brief tutorial for creating a simple scaffold. More complex scaffolds
 can be created by adding further sequences and inserts to the scaffold. More
-details about the scaffolder format can be found at [the scaffolder API][api].
-Details on the available scaffolder commands can be found on [the man
-pages][man].
+details about the scaffolder format can be found at [the scaffolder API][api]
+and the [scaffolder-format man page][format]. Details on the available
+scaffolder commands can be found on [the man pages][man].
 
 [Ruby]: http://www.ruby-lang.org/
 [RubyGems]: http://rubygems.org/
@@ -192,3 +192,4 @@ pages][man].
 [api]: http://rubydoc.info/gems/scaffolder/0.4.1/Scaffolder
 [email]: http://groups.google.com/group/scaffolder
 [yaml]: http://www.yaml.org/
+[format]: /man/scaffolder-format/
