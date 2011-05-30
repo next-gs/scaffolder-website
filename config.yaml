@@ -20,6 +20,7 @@ site:
     'api documentation':    "http://rubydoc.info/gems/scaffolder/frames"
     'unix manual pages':    "/man/"
     'contribute':           "/contribute/"
+    'mailing list':         "http://groups.google.com/group/scaffolder/topics"
     'getting started':      "/getting-started/"
     'scaffold file format': "/man/scaffolder-format/"
 author:

@@ -2,20 +2,18 @@
   title: "Contribute"
 ---
 
-Scaffolder is developed by [Michael Barton][6]. A [scaffolder Google group][7]
-is available for any questions or comments.
+Scaffolder is developed by [Michael Barton][6], written in Ruby, and open
+sourced under the [MIT license][1]. The code for both the [scaffolder API][2]
+and the [scaffolder command line tool][3] are hosted on gitub. In each case
+the master git branch contains the latest stable version. The most recent
+developments can be found on the develop branch.
 
-Scaffolder is written in ruby and open sourced under the [MIT license][1]. The
-code for both the [scaffolder API][2] and the [scaffolder command line tool][3]
-are hosted on gitub. In each case the master git branch contains the latest
-stable version. The most recent developments can be found on the develop
-branch.
-
-Scaffolder is actively being developed and therefore patches and pull requests
-are welcome. These should ideally be specified by [RSpec][4] unit tests.
+Scaffolder is actively developed and therefore patches and pull requests are
+welcome. These should ideally be specified by [RSpec][4] unit tests.
 [Cucumber][5] integration scenarios for new or changed behaviour are also very
 welcome. Bug reports can be made using the github issue tracker at each
-repository.
+repository. A [scaffolder Google group][7] is available for any questions or
+comments.
 
 [1]: http://www.opensource.org/licenses/mit-license.php
 [2]: http://github.com/michaelbarton/scaffolder
