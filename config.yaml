@@ -6,7 +6,7 @@ site:
   title: "Scaffolder"
   subtitle: "Genome scaffolding for human beings"
   url: "http://next.gs"
-  favicon: false
+  favicon: "/images/favicon.ico"
   analytics_token: "UA-1362555-4"
   navigation:
     'api documentation':    "http://rubydoc.info/gems/scaffolder/frames"
