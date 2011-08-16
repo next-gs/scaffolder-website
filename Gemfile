@@ -8,6 +8,8 @@ group :default do
   gem 'haml',                '~> 3.1'
   gem 'sass'
 
+  gem 'ronn'
+
   gem 'compass',             '~> 0.11'
   gem 'compass-susy-plugin', '=  0.8.1'
 
