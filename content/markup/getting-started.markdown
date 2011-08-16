@@ -16,8 +16,8 @@ terminal (excluding the '$' sign):
 
 <%= highlight %>
 
-  $ ruby -v
-  $ gem -v
+$ ruby -v
+$ gem -v
 
 <%= endhighlight %>
 
@@ -26,7 +26,7 @@ using the following command:
 
 <%= highlight %>
 
-  $ gem install scaffolder scaffolder-tools
+$ gem install scaffolder scaffolder-tools
 
 <%= endhighlight %>
 
@@ -35,7 +35,7 @@ the list of available scaffolder options.
 
 <%= highlight %>
 
-  $ scaffolder
+$ scaffolder
 
 <%= endhighlight %>
 
@@ -47,8 +47,8 @@ and [for Linux][linux_path]
 
 <%= highlight %>
 
-  # Add the output of this your $PATH
-  $ gem env | grep "EXECUTABLE DIRECTORY" | cut -d : -f 2
+# Add the output of this your $PATH
+$ gem env | grep "EXECUTABLE DIRECTORY" | cut -d : -f 2
 
 <%= endhighlight %>
 
@@ -61,12 +61,12 @@ progress through creating a simple scaffold.
 
 <%= highlight %>
 
-  >sequence1
-  AAAAAAAAAAAA
-  >sequence2
-  TTTTTTTTTTTT
-  >sequence3
-  GGGGG
+>sequence1
+AAAAAAAAAAAA
+>sequence2
+TTTTTTTTTTTT
+>sequence3
+GGGGG
 
 <%= endhighlight %>
 
@@ -75,7 +75,7 @@ file specifying how our nucleotide sequences should be joined together.
 
 <%= highlight %>
 
-  ---
+---
   - sequence:
       source: 'sequence1'
 
@@ -98,7 +98,7 @@ sequence command giving the locations of the two files we have just created.
 
 <%= highlight %>
 
-  $ scaffolder sequence scaffold.yml sequences.fna
+$ scaffolder sequence scaffold.yml sequences.fna
 
 <%= endhighlight %>
 
@@ -107,8 +107,8 @@ scaffold only contains one sequence entry.
 
 <%= highlight %>
 
-  >.
-  AAAAAAAAAAAA
+>.
+AAAAAAAAAAAA
 
 <%= endhighlight %>
 
@@ -120,7 +120,7 @@ sequence from the fasta file and an unknown region between these two sequences.
 
 <%= highlight %>
 
-  ---
+---
   - sequence:
       source: 'sequence1'
   - unresolved:
@@ -137,8 +137,8 @@ approximate distances.
 
 <%= highlight %>
 
-  >.
-  AAAAAAAAAAAANNNNNTTTTTTTTTTTT
+>.
+AAAAAAAAAAAANNNNNTTTTTTTTTTTT
 
 <%= endhighlight %>
 
@@ -152,7 +152,7 @@ by updating the scaffold file as follows:
 
 <%= highlight %>
 
-  ---
+---
   - sequence:
       source: 'sequence1'
       inserts:
@@ -173,8 +173,8 @@ that this is now the case where four guanine bases have been inserted
 
 <%= highlight %>
 
-  >.
-  AAGGGGGAAAAAAANNNNNTTTTTTTTTTTT
+>.
+AAGGGGGAAAAAAANNNNNTTTTTTTTTTTT
 
 <%= endhighlight %>
 

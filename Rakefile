@@ -1,3 +1,13 @@
+require 'rubygems'
+require 'bundler'
+begin
+  Bundler.setup(:default,:development)
+rescue Bundler::BundlerError => e
+  $stderr.puts e.message
+  $stderr.puts "Run `bundle install` to install missing gems"
+  exit e.status_code
+end
+
 require 'nanoc3/tasks'
 
 desc "Start nanoc watcher and viewer"
@@ -9,4 +19,23 @@ end
 
 task :view do
   `nanoc view`
+end
+
+namespace :template do
+
+  desc "Add git remote branch for template website"
+  task :remote do
+    `git remote add template git://github.com/michaelbarton/nanoc-template.git`
+  end
+
+  desc "Fetch template branches"
+  task :fetch do
+    `git fetch template`
+  end
+
+  desc "Merge template master branch"
+  task :merge do
+    `git merge --no-ff template/master`
+  end
+
 end
